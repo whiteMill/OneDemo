@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.onedemo.MainActivity">
+
+    <EditText
+        android:id="@+id/mEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        
+        <TextView
+            android:id="@+id/mTextView"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="Z"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <com.example.admin.onedemo.HandVew
+            android:background="#cccccc"
+            android:id="@+id/mHandView"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_margin="16dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
