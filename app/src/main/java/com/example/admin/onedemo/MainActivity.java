@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.umeng.message.PushAgent;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PushAgent.getInstance(this).onAppStart();
         initView();
         initDate();
         mHandView.setmTextView(mTextView);
